@@ -1,0 +1,18 @@
+---
+title: "About"
+image: Coyle-Patrick_original.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/Patrick78941150
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/patrick-coyle-90b35450
+    - icon: github
+      text: Github
+      href: https://github.com/PatrickCoyle
+---
+
+Patrick Coyle's webpage
