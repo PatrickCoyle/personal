@@ -1,0 +1,1 @@
+Sitemap: https://patrickcoyle.github.io/quarto_blog_coyle/sitemap.xml

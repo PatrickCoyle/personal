@@ -2,21 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.37">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2023-03-19">
+<meta name="author" content="Patrick Coyle">
+<meta name="dcterms.date" content="2023-04-23">
 
 <title>Patrick Coyle - Welcome To My Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -37,11 +42,11 @@ ul.task-list{list-style: none;}
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -60,42 +65,43 @@ ul.task-list{list-style: none;}
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-sidebar floating fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Patrick Coyle</span>
-  </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html">About</a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/PatrickCoyle"><i class="bi bi-github" role="img">
-</i> 
- </a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/Patrick78941150"><i class="bi bi-twitter" role="img">
-</i> 
- </a>
-  </li>  
-</ul>
-              <div id="quarto-search" class="" title="Search"></div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Welcome To My Blog</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Patrick Coyle</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../blog.html" class="sidebar-item-text sidebar-link">Blog</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     
 <!-- main -->
@@ -103,7 +109,7 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Welcome To My Blog</h1>
+<h1 class="title d-none d-lg-block">Welcome To My Blog</h1>
   <div class="quarto-categories">
     <div class="quarto-category">news</div>
   </div>
@@ -116,25 +122,30 @@ ul.task-list{list-style: none;}
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Tristan O’Malley </p>
+             <p>Patrick Coyle </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 19, 2023</p>
+      <p class="date">April 23, 2023</p>
     </div>
   </div>
+  
     
   </div>
   
 
 </header>
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
+<p>This is the first post in my blog. Welcome!</p>
 <p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in nulla sed justo dictum imperdiet a id nibh. Duis faucibus sed enim nec accumsan. Mauris ut tempus sapien. In hac habitasse platea dictumst. Aenean congue tellus imperdiet est imperdiet, a egestas arcu porta. Nunc et bibendum nibh, ut consectetur lacus. Mauris hendrerit faucibus orci sed malesuada. Maecenas eros dolor, mollis sit amet laoreet scelerisque, ultrices eu lectus. Donec mattis, est sed ultricies congue, arcu odio placerat turpis, rutrum mattis magna turpis id mauris. Morbi quis felis sodales ex ornare mollis quis in dolor. Sed sagittis, nunc vitae consectetur commodo, quam lectus rutrum risus, vitae dignissim erat arcu sit amet sapien. Aliquam rhoncus, risus suscipit laoreet ultricies, diam tortor interdum velit, et porttitor lectus justo nec metus.</p>
+<p>Proin nibh nibh, ornare vitae quam at, pellentesque euismod urna. Donec vel iaculis felis. Donec libero mi, sagittis ac libero ornare, accumsan molestie eros. Vivamus mollis ac mauris eu ultricies. Sed et elit vestibulum, bibendum est sit amet, placerat magna. Sed placerat orci sed diam porta, eu sollicitudin nisi fringilla. Curabitur ut commodo odio. Ut bibendum, urna sollicitudin malesuada aliquam, odio mi maximus purus, a congue libero purus in nisi. Mauris nisi nibh, elementum sed ornare vitae, efficitur ac tortor. Donec sit amet diam in tellus mollis iaculis. Phasellus quis suscipit dui, ut tristique lorem. Vivamus sed erat non magna congue ornare a a urna. Mauris pulvinar erat et odio sollicitudin, ac fermentum nisl viverra. Phasellus congue, magna vitae aliquam maximus, metus ante tincidunt nisi, eget bibendum tellus sapien eu lorem. Vivamus vestibulum nulla mi, vel faucibus nisi rhoncus in. Nulla pellentesque felis a imperdiet pharetra.</p>
+<p>Curabitur nunc urna, malesuada vitae lectus eget, egestas facilisis nisl. Cras bibendum erat id tincidunt pretium. Suspendisse cursus placerat tellus, non consectetur lacus ultrices in. Quisque eget libero vitae enim ultricies condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed interdum erat ut pulvinar eleifend. In eu magna sed lacus convallis laoreet ac in eros. Nulla cursus porttitor feugiat.</p>
+<p>Integer laoreet, tortor et congue egestas, dolor arcu finibus lorem, eu porttitor felis ante at mauris. Praesent pellentesque orci in condimentum aliquet. Cras facilisis faucibus ex, sit amet euismod est placerat vitae. Morbi rhoncus ullamcorper finibus. Sed eget ullamcorper nisl, vel efficitur neque. Sed at massa gravida, accumsan felis fringilla, accumsan lectus. Duis non odio mollis, eleifend felis vel, lobortis tortor. Pellentesque imperdiet eros quis porta fringilla. Praesent at dapibus quam.</p>
+<p>Donec sed nisi lectus. Cras at velit cursus metus tempus vestibulum nec quis sapien. Cras vestibulum suscipit volutpat. Fusce sapien ante, porta non scelerisque sit amet, dictum at massa. In quis condimentum leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere magna a risus consectetur convallis. Donec sagittis elit non leo vulputate, id ultrices mi hendrerit.</p>
 
 
 
@@ -180,7 +191,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -208,31 +236,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
