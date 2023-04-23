@@ -1,0 +1,40 @@
+---
+title: "Using the NBA API in R"
+author: "Patrick Coyle"
+date: "2023-04-23"
+categories: [news, code, analysis]
+image: "bball.png"
+---
+
+[nba_api](https://github.com/swar/nba_api) is a Python client for accessing data from [www.nba.com](www.nba.com). Here is an example of using `nba_api` to create a data viz:
+
+```{r message = FALSE, warning = FALSE}
+# Load R packages and Python modules ------
+library(reticulate)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+library(nbaplotR)
+nba_api <- import("nba_api")
+LeagueDashTeamStats <- nba_api$stats$endpoints$leaguedashteamstats$LeagueDashTeamStats
+
+# Pull and wrangle data from nba.com ------
+my_df1 <- LeagueDashTeamStats(
+  season = '2022-23',
+  season_type_all_star = 'Regular Season'
+)$get_data_frames()[[1]] %>% 
+  mutate(
+    TEAM_ABBR = valid_team_names("NBA")[c(1, 3, 2, 4:25, 27, 26, 28:30)]
+  )
+
+# Plot data ------
+my_ggobj <- my_df1 %>% 
+  ggplot(aes(x = REB, y = PTS)) +
+  geom_nba_logos(
+    aes(team_abbr = TEAM_ABBR), 
+    width = 0.075,
+    height = 0.075
+  ) +
+  theme_bw()
+girafe(ggobj = my_ggobj)
+```

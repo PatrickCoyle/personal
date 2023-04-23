@@ -2,18 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://patrickcoyle.github.io/quarto_blog_coyle/blog.html</loc>
-    <lastmod>2023-04-23T21:57:36.992Z</lastmod>
+    <lastmod>2023-04-23T22:58:04.100Z</lastmod>
   </url>
   <url>
     <loc>https://patrickcoyle.github.io/quarto_blog_coyle/index.html</loc>
-    <lastmod>2023-04-23T21:57:37.598Z</lastmod>
+    <lastmod>2023-04-23T22:58:04.646Z</lastmod>
   </url>
   <url>
-    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/post-with-code/index.html</loc>
-    <lastmod>2023-04-23T21:57:38.469Z</lastmod>
-  </url>
-  <url>
-    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/welcome/index.html</loc>
-    <lastmod>2023-04-23T21:57:39.019Z</lastmod>
+    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/nba_api_20230423/index.html</loc>
+    <lastmod>2023-04-23T22:58:05.710Z</lastmod>
   </url>
 </urlset>
