@@ -6,16 +6,29 @@ categories: [news, code, analysis]
 image: "bball.png"
 ---
 
-[nba_api](https://github.com/swar/nba_api) is a Python client for accessing data from [www.nba.com](www.nba.com). Here is an example of using `nba_api` to create a data viz:
+[nba_api](https://github.com/swar/nba_api) is a Python client for accessing data from [www.nba.com](www.nba.com). This post presents an example of using `nba_api` to create a data viz. This example begins by using `reticulate::import()` to import `nba_api`. Before doing this, we must:
 
-```{r message = FALSE, warning = FALSE}
+1.  Install Python and configure R to use Python [using the reticulate package](https://rstudio.github.io/reticulate/index.html);
+
+2.  Install `nba_api` in Python.
+
+A minimal working example for this setup would be useful. I do not have one, because my process involved the Anaconda GUI and so it is not reproducible.
+
+For data viz, we use the `nbaplotR` package, which provides a `ggplot2` geom for plotting NBA and WNBA logos. This package is not available on CRAN -- the developer recommends installing from Github using `pak::pak()`:
+
+```{r eval = F}
+if (!require("pak")) install.packages("pak")
+pak::pak("mrcaseb/nbaplotR")
+```
+
+```{r message = F, warning = F}
 # Load R packages and Python modules ------
 library(reticulate)
 library(dplyr)
 library(ggplot2)
 library(ggiraph)
 library(nbaplotR)
-nba_api <- import("nba_api")
+nba_api <- reticulate::import("nba_api")
 LeagueDashTeamStats <- nba_api$stats$endpoints$leaguedashteamstats$LeagueDashTeamStats
 
 # Pull and wrangle data from nba.com ------
