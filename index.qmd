@@ -10,6 +10,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/PatrickCoyle
+    - icon: envelope
+      text: E-mail
+      href: mailto:patricktmc@gmail.com
 ---
 
-A personal webpage and data science blog
+A personal webpage and data science [blog](blog.qmd)

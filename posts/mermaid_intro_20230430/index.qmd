@@ -23,9 +23,9 @@ C --> D[Result one]
 C --> E[Result two]
 ```
 
-Here is mermaid template for the 2023 NBA Playoffs (excluding the play-in tournament)[^note1]
+Here is mermaid template for the 2023 NBA Playoffs (excluding the play-in tournament)[^1]
 
-[^note1]: `DiagrammeR::mermaid()` does not appear to support every Mermaid diagram syntax, such as flowcharts. But the flowchart syntax can be manually entered into a Quarto mermaid code chunk.
+[^1]: `DiagrammeR::mermaid()` does not appear to support every Mermaid diagram syntax, such as flowcharts. But the flowchart syntax can be manually entered into a Quarto mermaid code chunk.
 
 ```{r}
 library(dplyr, warn.conflicts = FALSE) # to load the magrittr pipe
