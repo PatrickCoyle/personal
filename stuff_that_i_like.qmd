@@ -9,6 +9,8 @@ date: today
 
 -   [The Good Docs Project](https://thegooddocsproject.dev/)
 
+-   [CRAN Task View: Reproducible Research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+
 -   [Albert Rapp's blog](https://albert-rapp.de/) - an exemplary Quarto blog, focused on data science education.
 
 -   [Free PDF Compressor](https://www.freepdfcompressor.com/) - a free simple desktop application for compressing PDFs.

@@ -15,4 +15,4 @@ about:
       href: mailto:patricktmc@gmail.com
 ---
 
-A personal webpage and data science [blog](blog.qmd)
+Welcome to my personal webpage and data science [blog](blog.qmd). I am a statistician with an interest in [R](https://www.r-project.org/) programming. I also cook sometimes and keep a [photo journal](https://patrickcoyle.github.io/cfood/) of some of the things I make.

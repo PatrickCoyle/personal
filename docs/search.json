@@ -4,7 +4,7 @@
     "href": "stuff_that_i_like.html",
     "title": "Stuff That I Like",
     "section": "",
-    "text": "Websites and Blogs\n\nThe Posit Blog\nThe Good Docs Project\nAlbert Rapp’s blog - an exemplary Quarto blog, focused on data science education.\nFree PDF Compressor - a free simple desktop application for compressing PDFs.\n\n\n\nBooks about R\nI recommend the four textbooks on R co-authored by Hadley Wickham, which are available for free as e-books (published using quarto or bookdown):\n\n\nR for Data Science, with Garrett Grolemund, is the place to start if you want to learn how to do data science with R.\nggplot2: elegant graphics for data analysis shows you how to use ggplot2 to create graphics that help you understand your data.\nAdvanced R helps you master R as a programming language, teaching you what makes R tick.\nR packages teaches good software engineering practices for R, using packages for bundling, documenting, and testing your code."
+    "text": "Websites and Blogs\n\nThe Posit Blog\nThe Good Docs Project\nCRAN Task View: Reproducible Research\nAlbert Rapp’s blog - an exemplary Quarto blog, focused on data science education.\nFree PDF Compressor - a free simple desktop application for compressing PDFs.\n\n\n\nBooks about R\nI recommend the four textbooks on R co-authored by Hadley Wickham, which are available for free as e-books (published using quarto or bookdown):\n\n\nR for Data Science, with Garrett Grolemund, is the place to start if you want to learn how to do data science with R.\nggplot2: elegant graphics for data analysis shows you how to use ggplot2 to create graphics that help you understand your data.\nAdvanced R helps you master R as a programming language, teaching you what makes R tick.\nR packages teaches good software engineering practices for R, using packages for bundling, documenting, and testing your code."
   },
   {
     "objectID": "posts/mermaid_intro_20230430/index.html",
@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Patrick Coyle",
     "section": "",
-    "text": "A personal webpage and data science blog"
+    "text": "Welcome to my personal webpage and data science blog. I am a statistician with an interest in R programming. I also cook sometimes and keep a photo journal of some of the things I make."
   },
   {
     "objectID": "posts/nba_api_20230423/index.html",
