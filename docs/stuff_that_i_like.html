@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Patrick Coyle">
-<meta name="dcterms.date" content="2023-04-30">
+<meta name="dcterms.date" content="2023-08-19">
 
-<title>Patrick Coyle - Introduction to mermaid.js</title>
+<title>Patrick Coyle - Stuff That I Like</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,59 +21,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -100,20 +65,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
-<script src="../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
-<script src="../../site_libs/d3-3.3.8/d3.min.js"></script>
-<script src="../../site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
-<link href="../../site_libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet">
-<script src="../../site_libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
-<link href="../../site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
-<script src="../../site_libs/chromatography-0.1/chromatography.js"></script>
-<script src="../../site_libs/DiagrammeR-binding-1.0.9/DiagrammeR.js"></script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -123,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Patrick Coyle</span>
     </a>
   </div>
@@ -134,11 +88,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html" rel="" target="">
+    <a class="nav-link" href="./blog.html" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../stuff_that_i_like.html" rel="" target="">
+    <a class="nav-link active" href="./stuff_that_i_like.html" rel="" target="" aria-current="page">
  <span class="menu-text">Stuff That I Like</span></a>
   </li>  
 </ul>
@@ -158,29 +112,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction to mermaid.js</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">news</div>
-    <div class="quarto-category">code</div>
-    <div class="quarto-category">analysis</div>
-  </div>
-  </div>
+<h1 class="title">Stuff That I Like</h1>
+</div>
 
 
 
 <div class="quarto-title-meta column-page">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Patrick Coyle </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 30, 2023</p>
+      <p class="date">August 19, 2023</p>
     </div>
   </div>
   
@@ -191,80 +134,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<!-- https://unpkg.com/mermaid@0.5.3/dist/www/all.html#mermaid -->
-<p><code>mermaid.js</code> is a Javascript library that allows you to create diagrams by writing “Markdown-ish syntax.” It has <a href="https://quarto.org/docs/authoring/diagrams.html">native support in Quarto</a>:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>graph LR</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>A[Hard edge] --&gt; B(Round edge)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>B --&gt; C{Decision}</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>C --&gt; D[Result one]</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>C --&gt; E[Result two]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">graph LR
-A[Hard edge] --&gt; B(Round edge)
-B --&gt; C{Decision}
-C --&gt; D[Result one]
-C --&gt; E[Result two]
-</pre>
-</div>
-</div>
-</div>
-</div>
-<p>Here is mermaid template for the 2023 NBA Playoffs (excluding the play-in tournament)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr, <span class="at">warn.conflicts =</span> <span class="cn">FALSE</span>) <span class="co"># to load the magrittr pipe</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>my_mmd <span class="ot">&lt;-</span> <span class="st">"playoffs_template1.mmd"</span> <span class="sc">%&gt;%</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">readLines</span>(<span class="at">warn =</span> F) </span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>my_mmd <span class="sc">%&gt;%</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  DiagrammeR<span class="sc">::</span><span class="fu">mermaid</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="DiagrammeR html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-ec0d521e9029f5d964a0" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-ec0d521e9029f5d964a0">{"x":{"diagram":"  graph LR\n  E1 --> ES1\n  E8 --> ES1\n  E4 --> ES4\n  E5 --> ES4\n  E2 --> ES2\n  E7 --> ES2\n  E3 --> ES3\n  E6 --> ES3\n  ES1 --> EF1\n  ES4 --> EF1\n  ES2 --> EF2\n  ES3 --> EF2\n  EF1 --> EC\n  EF2 --> EC\n  EC --> C\n  W1 --> WS1\n  W8 --> WS1\n  W4 --> WS4\n  W5 --> WS4\n  W2 --> WS2\n  W7 --> WS2\n  W3 --> WS3\n  W6 --> WS3\n  WS1 --> WF1\n  WS4 --> WF1\n  WS2 --> WF2\n  WS3 --> WF2\n  WF1 --> WC\n  WF2 --> WC\n  WC --> C"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<p>We can progammatically edit this template with data about the teams and games:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>seed_xwalk <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"nba_2023_seed_xwalk.csv"</span>, <span class="at">na =</span> <span class="st">""</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>helper1_20230423 <span class="ot">&lt;-</span> <span class="cf">function</span> (mmd) {</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  mmd[<span class="sc">-</span><span class="dv">1</span>] <span class="sc">%&gt;%</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_trim</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_split</span>(<span class="st">" --&gt; "</span>, <span class="at">simplify =</span> T) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setNames</span>(<span class="fu">c</span>(<span class="st">"From"</span>, <span class="st">"To"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(seed_xwalk, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"From"</span> <span class="ot">=</span> <span class="st">"seed"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">new_edges =</span> <span class="fu">paste0</span>(<span class="st">"  "</span>, </span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">case_when</span>(<span class="sc">!</span><span class="fu">is.na</span>(team_stub) <span class="sc">~</span> team_stub, T <span class="sc">~</span> From), </span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                       <span class="st">" --&gt; "</span>, </span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                       To)</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(new_edges) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(mmd[<span class="dv">1</span>], .) </span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>my_mmd <span class="sc">%&gt;%</span> </span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">helper1_20230423</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  DiagrammeR<span class="sc">::</span><span class="fu">mermaid</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="DiagrammeR html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-daf4a9e215a296eb56fb" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-daf4a9e215a296eb56fb">{"x":{"diagram":"  graph LR\n  MIL --> ES1\n  MIA --> ES1\n  CLE --> ES4\n  NYK --> ES4\n  BOS --> ES2\n  ATL --> ES2\n  PHI --> ES3\n  BKN --> ES3\n  ES1 --> EF1\n  ES4 --> EF1\n  ES2 --> EF2\n  ES3 --> EF2\n  EF1 --> EC\n  EF2 --> EC\n  EC --> C\n  DEN --> WS1\n  MIN --> WS1\n  PHX --> WS4\n  LAC --> WS4\n  MEM --> WS2\n  LAL --> WS2\n  SAC --> WS3\n  GSW --> WS3\n  WS1 --> WF1\n  WS4 --> WF1\n  WS2 --> WF2\n  WS3 --> WF2\n  WF1 --> WC\n  WF2 --> WC\n  WC --> C"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
+<section id="websites-and-blogs" class="level1">
+<h1>Websites and Blogs</h1>
+<ul>
+<li><p><a href="https://posit.co/blog/">The Posit Blog</a></p></li>
+<li><p><a href="https://thegooddocsproject.dev/">The Good Docs Project</a></p></li>
+<li><p><a href="https://albert-rapp.de/">Albert Rapp’s blog</a> - an exemplary Quarto blog, focused on data science education.</p></li>
+<li><p><a href="https://www.freepdfcompressor.com/">Free PDF Compressor</a> - a free simple desktop application for compressing PDFs.</p></li>
+</ul>
+</section>
+<section id="books-about-r" class="level1">
+<h1>Books about R</h1>
+<p>I recommend the four textbooks on R co-authored by Hadley Wickham, which are available for free as e-books (published using <code>quarto</code> or <code>bookdown</code>):</p>
+<blockquote class="blockquote">
+<ul>
+<li><p><a href="https://r4ds.hadley.nz/">R for Data Science</a>, with Garrett Grolemund, is the place to start if you want to learn how to do data science with R.</p></li>
+<li><p><a href="https://ggplot2-book.org/">ggplot2: elegant graphics for data analysis</a> shows you how to use ggplot2 to create graphics that help you understand your data.</p></li>
+<li><p><a href="http://adv-r.hadley.nz/">Advanced R</a> helps you master R as a programming language, teaching you what makes R tick.</p></li>
+<li><p><a href="http://r-pkgs.org/">R packages</a> teaches good software engineering practices for R, using packages for bundling, documenting, and testing your code.</p></li>
+</ul>
+</blockquote>
 
 
+</section>
 
-
-<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p><code>DiagrammeR::mermaid()</code> does not appear to support every Mermaid diagram syntax, such as flowcharts. But the flowchart syntax can be manually entered into a Quarto mermaid code chunk.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</aside></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

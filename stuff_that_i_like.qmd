@@ -1,0 +1,26 @@
+---
+title: "Stuff That I Like"
+date: today
+---
+
+# Websites and Blogs
+
+-   [The Posit Blog](https://posit.co/blog/)
+
+-   [The Good Docs Project](https://thegooddocsproject.dev/)
+
+-   [Albert Rapp's blog](https://albert-rapp.de/) - an exemplary Quarto blog, focused on data science education.
+
+-   [Free PDF Compressor](https://www.freepdfcompressor.com/) - a free simple desktop application for compressing PDFs.
+
+# Books about R
+
+I recommend the four textbooks on R co-authored by Hadley Wickham, which are available for free as e-books (published using `quarto` or `bookdown`):
+
+> -   [R for Data Science](https://r4ds.hadley.nz/), with Garrett Grolemund, is the place to start if you want to learn how to do data science with R.
+>
+> -   [ggplot2: elegant graphics for data analysis](https://ggplot2-book.org/) shows you how to use ggplot2 to create graphics that help you understand your data.
+>
+> -   [Advanced R](http://adv-r.hadley.nz/) helps you master R as a programming language, teaching you what makes R tick.
+>
+> -   [R packages](http://r-pkgs.org/) teaches good software engineering practices for R, using packages for bundling, documenting, and testing your code.

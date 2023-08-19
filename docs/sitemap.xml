@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/blog.html</loc>
-    <lastmod>2023-05-01T01:32:22.898Z</lastmod>
-  </url>
-  <url>
-    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/index.html</loc>
-    <lastmod>2023-05-01T01:32:16.832Z</lastmod>
+    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/stuff_that_i_like.html</loc>
+    <lastmod>2023-08-19T17:54:53.236Z</lastmod>
   </url>
   <url>
     <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/mermaid_intro_20230430/index.html</loc>
-    <lastmod>2023-05-01T01:32:17.705Z</lastmod>
+    <lastmod>2023-05-01T00:50:51.791Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/blog.html</loc>
+    <lastmod>2023-05-01T01:24:35.703Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/index.html</loc>
+    <lastmod>2023-07-27T17:40:56.164Z</lastmod>
   </url>
   <url>
     <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/nba_api_20230423/index.html</loc>
-    <lastmod>2023-05-01T01:32:18.865Z</lastmod>
+    <lastmod>2023-04-30T19:49:38.063Z</lastmod>
   </url>
 </urlset>

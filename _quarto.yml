@@ -7,21 +7,27 @@ website:
   site-url: https://patrickcoyle.github.io/quarto_blog_coyle
   description: "This is Patrick Coyle's personal blog."
   navbar:
-  # sidebar:
-  #   style: "floating"
-  #   alignment: left
-  #   border: true
     title: "Patrick Coyle"
     subtitle: "Statistician"
     search: true
     right:
       - text: "Blog"
         href: blog.qmd
+      - text: "Stuff That I Like"
+        href: stuff_that_i_like.qmd
     # contents:
     #   section: "Blog Posts"
     #   href: blog.qmd
     #   contents: posts/**/*.qmd
     # collapse-level: 1
+  # sidebar:
+  #   # style: "docked"
+  #   alignment: left
+  #   border: true
+  #   search: true
+  #   contents:
+  #     - text: "Blog"
+  #       href: blog.qmd
 
 format:
   html:
