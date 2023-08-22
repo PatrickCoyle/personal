@@ -1,0 +1,14 @@
+{
+  "hash": "776fe707aa8d3b53ebf7720709c9ffd6",
+  "result": {
+    "markdown": "---\ntitle: \"Social Networking with the Mastodon API in R\"\nauthor: \"Patrick Coyle\"\ndate: \"2023-08-21\"\ncategories: [news, code, analysis]\nimage: \"mastodon-logo.png\"\nexecute:\n  echo: true\n  warning: false\n  error: false\n  message: false\n---\n\n\nI recently created a Fosstodon account to engage with the #rstats community there. So it seemed only natural to use `rtoot` (spiritual successor to `rtweet`) to publish my first \"toot\":\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# https://github.com/schochastics/rtoot\n# devtools::install_github(\"schochastics/rtoot\")\n# rtoot::auth_setup()\nrtoot::post_toot(status = \"my first rtoot #rstats\\n\n                 (published with the rtoot package: https://github.com/schochastics/rtoot)\",\n                 media = \"mastodon-logo.png\", \n                 alt_text = \"Mastodon logo\")\n```\n:::\n\n\nIt worked!\n\n![My first toot, published with the \\`rtoot\\` package.](my-toot.PNG){fig-alt=\"my first toot!\"}\n\nA Mastodon thread could be published using Quarto and custom `knitr` hooks. [Here](https://gist.github.com/eliocamp/e22bfd3912196d2403af6c558168a1a4) is an example using `rtweet` -- I will try to translate this to use `rtoot` instead.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -14,18 +14,25 @@
     "text": "mermaid.js is a Javascript library that allows you to create diagrams by writing “Markdown-ish syntax.” It has native support in Quarto:\n\ngraph LR\nA[Hard edge] --&gt; B(Round edge)\nB --&gt; C{Decision}\nC --&gt; D[Result one]\nC --&gt; E[Result two]\n\n\n\ngraph LR\nA[Hard edge] --&gt; B(Round edge)\nB --&gt; C{Decision}\nC --&gt; D[Result one]\nC --&gt; E[Result two]\n\n\n\n\n\nHere is mermaid template for the 2023 NBA Playoffs (excluding the play-in tournament)1\n\nlibrary(dplyr, warn.conflicts = FALSE) # to load the magrittr pipe\nmy_mmd &lt;- \"playoffs_template1.mmd\" %&gt;%\n  readLines(warn = F) \nmy_mmd %&gt;%\n  paste(collapse = \"\\n\") %&gt;%\n  DiagrammeR::mermaid()\n\n\n\n\n\nWe can progammatically edit this template with data about the teams and games:\n\nlibrary(readr)\nlibrary(stringr)\nseed_xwalk &lt;- read_csv(\"nba_2023_seed_xwalk.csv\", na = \"\")\nhelper1_20230423 &lt;- function (mmd) {\n  mmd[-1] %&gt;%\n  str_trim() %&gt;% \n  str_split(\" --&gt; \", simplify = T) %&gt;% \n  as_tibble() %&gt;% \n  setNames(c(\"From\", \"To\")) %&gt;% \n  left_join(seed_xwalk, by = c(\"From\" = \"seed\")) %&gt;% \n  transmute(\n    new_edges = paste0(\"  \", \n                       case_when(!is.na(team_stub) ~ team_stub, T ~ From), \n                       \" --&gt; \", \n                       To)\n  ) %&gt;% \n  pull(new_edges) %&gt;% \n  c(mmd[1], .) \n}\nmy_mmd %&gt;% \n  helper1_20230423() %&gt;% \n  paste(collapse = \"\\n\") %&gt;%\n  DiagrammeR::mermaid()\n\n\n\n\n\n\n\n\n\nFootnotes\n\n\nDiagrammeR::mermaid() does not appear to support every Mermaid diagram syntax, such as flowcharts. But the flowchart syntax can be manually entered into a Quarto mermaid code chunk.↩︎"
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog Posts",
-    "section": "",
-    "text": "Introduction to mermaid.js\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 30, 2023\n\n\nPatrick Coyle\n\n\n\n\n\n\n  \n\n\n\n\nUsing the NBA API in R\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 23, 2023\n\n\nPatrick Coyle\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Patrick Coyle",
     "section": "",
     "text": "Welcome to my personal webpage and data science blog. I am a statistician with an interest in R programming. I also cook sometimes and keep a photo journal of some of the things I make."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog Posts",
+    "section": "",
+    "text": "Social Networking with the Mastodon API in R\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nPatrick Coyle\n\n\n\n\n\n\n  \n\n\n\n\nIntroduction to mermaid.js\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 30, 2023\n\n\nPatrick Coyle\n\n\n\n\n\n\n  \n\n\n\n\nUsing the NBA API in R\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 23, 2023\n\n\nPatrick Coyle\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/mastodon_api_20230821/index.html",
+    "href": "posts/mastodon_api_20230821/index.html",
+    "title": "Social Networking with the Mastodon API in R",
+    "section": "",
+    "text": "I recently created a Fosstodon account to engage with the #rstats community there. So it seemed only natural to use rtoot (spiritual successor to rtweet) to publish my first “toot”:\n\n# https://github.com/schochastics/rtoot\n# devtools::install_github(\"schochastics/rtoot\")\n# rtoot::auth_setup()\nrtoot::post_toot(status = \"my first rtoot #rstats\\n\n                 (published with the rtoot package: https://github.com/schochastics/rtoot)\",\n                 media = \"mastodon-logo.png\", \n                 alt_text = \"Mastodon logo\")\n\nIt worked!\n\n\n\nMy first toot, published with the `rtoot` package.\n\n\nA Mastodon thread could be published using Quarto and custom knitr hooks. Here is an example using rtweet – I will try to translate this to use rtoot instead."
   },
   {
     "objectID": "posts/nba_api_20230423/index.html",

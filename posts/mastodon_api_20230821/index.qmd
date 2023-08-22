@@ -1,0 +1,32 @@
+---
+title: "Social Networking with the Mastodon API in R"
+author: "Patrick Coyle"
+date: "2023-08-21"
+categories: [news, code, analysis]
+image: "mastodon-logo.png"
+execute:
+  echo: true
+  warning: false
+  error: false
+  message: false
+---
+
+I recently created a Fosstodon account to engage with the #rstats community there. So it seemed only natural to use `rtoot` (spiritual successor to `rtweet`) to publish my first "toot":
+
+```{r}
+#| eval: false
+
+# https://github.com/schochastics/rtoot
+# devtools::install_github("schochastics/rtoot")
+# rtoot::auth_setup()
+rtoot::post_toot(status = "my first rtoot #rstats\n
+                 (published with the rtoot package: https://github.com/schochastics/rtoot)",
+                 media = "mastodon-logo.png", 
+                 alt_text = "Mastodon logo")
+```
+
+It worked!
+
+![My first toot, published with the \`rtoot\` package.](my-toot.PNG){fig-alt="my first toot!"}
+
+A Mastodon thread could be published using Quarto and custom `knitr` hooks. [Here](https://gist.github.com/eliocamp/e22bfd3912196d2403af6c558168a1a4) is an example using `rtweet` -- I will try to translate this to use `rtoot` instead.
