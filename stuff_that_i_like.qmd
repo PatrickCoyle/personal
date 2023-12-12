@@ -13,6 +13,8 @@ date: today
 
 -   [Albert Rapp's blog](https://albert-rapp.de/) - an exemplary Quarto blog, focused on data science education.
 
+-   [Nicola Rennie's blog](https://nrennie.rbind.io/blog/)
+
 -   [Free PDF Compressor](https://www.freepdfcompressor.com/) - a free simple desktop application for compressing PDFs.
 
 # Books about R

@@ -2,26 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://patrickcoyle.github.io/quarto_blog_coyle/stuff_that_i_like.html</loc>
-    <lastmod>2023-08-19T18:58:43.452Z</lastmod>
+    <lastmod>2023-12-01T00:35:49.870Z</lastmod>
   </url>
   <url>
-    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/mermaid_intro_20230430/index.html</loc>
-    <lastmod>2023-05-01T00:50:51.791Z</lastmod>
-  </url>
-  <url>
-    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/index.html</loc>
-    <lastmod>2023-08-19T18:56:39.320Z</lastmod>
-  </url>
-  <url>
-    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/blog.html</loc>
-    <lastmod>2023-05-01T01:24:35.703Z</lastmod>
+    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/nba_api_20230423/index.html</loc>
+    <lastmod>2023-04-30T19:49:38.063Z</lastmod>
   </url>
   <url>
     <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/mastodon_api_20230821/index.html</loc>
     <lastmod>2023-08-22T03:11:02.154Z</lastmod>
   </url>
   <url>
-    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/nba_api_20230423/index.html</loc>
-    <lastmod>2023-04-30T19:49:38.063Z</lastmod>
+    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/index.html</loc>
+    <lastmod>2023-12-05T19:03:39.698Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/blog.html</loc>
+    <lastmod>2023-12-06T04:22:20.726Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/aoc_20231211/index.html</loc>
+    <lastmod>2023-12-12T04:27:55.955Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/posts/mermaid_intro_20230430/index.html</loc>
+    <lastmod>2023-05-01T00:50:51.791Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patrickcoyle.github.io/quarto_blog_coyle/rss_feed_aggregator.html</loc>
+    <lastmod>2023-10-20T05:54:07.201Z</lastmod>
   </url>
 </urlset>

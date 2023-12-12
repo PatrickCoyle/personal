@@ -1,0 +1,41 @@
+---
+title: "RSS Feed Aggregator"
+date: today
+---
+
+```{r}
+# https://medium.com/@vilcins/rss-feeds-for-your-github-releases-tags-and-activity-cbda2c51373
+library(tidyRSS)
+library(magrittr)
+library(dplyr)
+library(lubridate)
+library(stringr)
+
+my_feeds1 <- c(
+  "https://github.com/ropensci/targets/releases.atom",
+  "https://github.com/ropensci/tarchetypes/releases.atom",
+  "https://github.com/ropensci/gittargets/releases.atom"
+)
+rss_tbl1 <- my_feeds1 %>% 
+  purrr::map_dfr(tidyRSS::tidyfeed) %>% 
+  arrange(desc(entry_last_updated)) %>% 
+  transmute(
+    Date = lubridate::as_date(entry_last_updated), 
+    Title = stringr::str_remove_all(feed_title, "Release notes from"), 
+    entry_title, 
+    entry_link
+  )
+
+rss_tbl2 <- tidyRSS::tidyfeed("https://www.tidyverse.org/index.xml")
+rss_tbl3 <- tidyRSS::tidyfeed("https://albert-rapp.de/blog.xml")
+
+
+# %>% 
+#   arrange(desc(entry_last_updated)) %>% 
+#   transmute(
+#     Date = lubridate::as_date(entry_last_updated), 
+#     Title = stringr::str_remove_all(feed_title, "Release notes from"), 
+#     entry_title, 
+#     entry_link
+#   )
+```

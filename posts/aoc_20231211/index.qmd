@@ -1,0 +1,14 @@
+---
+title: "Advent of Code 2023"
+author: "Patrick Coyle"
+date: today
+categories: [news, code, analysis]
+image: "aoc2023.JPG"
+execute:
+  echo: true
+  warning: false
+  error: false
+  message: false
+---
+
+My solutions to Advent of Code 2023 are published [here](https://patrickcoyle.github.io/caoc_2023/).
