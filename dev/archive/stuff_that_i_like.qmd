@@ -1,0 +1,20 @@
+---
+title: "Stuff That I Like"
+date: today
+---
+
+# Websites and Blogs
+
+-   [The Posit Blog](https://posit.co/blog/)
+-   [The rOpenSci Blog](https://ropensci.org/blog/)
+-   [The Jumping Rivers Blog](https://www.jumpingrivers.com/blog/)
+-   [CRAN Task View: Reproducible Research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+
+# Books about R
+
+I recommend the four textbooks on R co-authored by Hadley Wickham, which are available for free as e-books (published using `quarto` or `bookdown`):
+
+> -   [R for Data Science](https://r4ds.hadley.nz/), with Garrett Grolemund, is the place to start if you want to learn how to do data science with R.
+> -   [ggplot2: elegant graphics for data analysis](https://ggplot2-book.org/) shows you how to use ggplot2 to create graphics that help you understand your data.
+> -   [Advanced R](http://adv-r.hadley.nz/) helps you master R as a programming language, teaching you what makes R tick.
+> -   [R packages](http://r-pkgs.org/) teaches good software engineering practices for R, using packages for bundling, documenting, and testing your code.

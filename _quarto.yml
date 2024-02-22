@@ -7,7 +7,7 @@ project:
 
 website:
   title: "Patrick Coyle"
-  site-url: https://patrickcoyle.github.io/quarto_blog_coyle
+  site-url: https://patrickcoyle.github.io/personal
   description: "This is Patrick Coyle's personal blog."
   navbar:
     title: "Patrick Coyle"
@@ -16,21 +16,8 @@ website:
     right:
       - text: "Blog"
         href: blog.qmd
-      - text: "Stuff That I Like"
-        href: stuff_that_i_like.qmd
-    # contents:
-    #   section: "Blog Posts"
-    #   href: blog.qmd
-    #   contents: posts/**/*.qmd
-    # collapse-level: 1
-  # sidebar:
-  #   # style: "docked"
-  #   alignment: left
-  #   border: true
-  #   search: true
-  #   contents:
-  #     - text: "Blog"
-  #       href: blog.qmd
+      - text: "RSS Reader"
+        href: rss_reader.qmd
 
 format:
   html:
