@@ -3,6 +3,5 @@
 .RData
 .Ruserdata
 /.quarto/
-renv/
 _reference/
 dev/
