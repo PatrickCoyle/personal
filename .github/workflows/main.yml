@@ -14,7 +14,7 @@ jobs:
       - name: Install libcurl4-openssl-dev
         run: |
           sudo apt-get update
-          sudo apt-get install -y libcurl4-openssl-dev
+          sudo apt-get install -y libcurl4-openssl-dev libmagick++-dev
 
       # https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
       - name: Setup R
