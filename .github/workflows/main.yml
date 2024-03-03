@@ -4,6 +4,10 @@ on:
   push:
     branches: [ main ]  # Change branch name as needed
 
+permissions: 
+  contents: write
+  pages: write
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -32,3 +36,10 @@ jobs:
 
       - name: Render project
         uses: quarto-dev/quarto-actions/render@v2  # Use the render action
+
+      - name: Publish to GitHub Pages (and render) 
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
