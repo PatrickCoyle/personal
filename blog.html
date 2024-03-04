@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.266">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,12 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -61,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -99,6 +101,33 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -106,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
@@ -120,12 +149,12 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" rel="" target="" aria-current="page">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./rss_reader.html" rel="" target="">
- <span class="menu-text">RSS Reader</span></a>
+    <a class="nav-link" href="./rss_reader.html"> 
+<span class="menu-text">RSS Reader</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -166,21 +195,22 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1709445600000" data-listing-file-modified-sort="1702355275955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1709510400000" data-listing-file-modified-sort="1709512672799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
 <div class="thumbnail">
-<p><a href="./posts/aoc_20231211/index.html"> <img src="./posts/aoc_20231211/aoc2023.JPG" class="thumbnail-image"> </a></p>
+<p><a href="./posts/aoc_20231211/index.html" class="no-external"></a></p><a href="./posts/aoc_20231211/index.html" class="no-external">
+<p><img src="./posts/aoc_20231211/aoc2023.JPG" class="thumbnail-image"></p>
+</a><p><a href="./posts/aoc_20231211/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/aoc_20231211/index.html">
 <h3 class="no-anchor listing-title">
-Advent of Code 2023
+<a href="./posts/aoc_20231211/index.html" class="no-external">Advent of Code 2023</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/aoc_20231211/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
 news
@@ -192,16 +222,14 @@ code
 analysis
 </div>
 </div>
-<a href="./posts/aoc_20231211/index.html">
 <div class="listing-description">
-My solutions to Advent of Code 2023 are published here.
+<a href="./posts/aoc_20231211/index.html" class="no-external">My solutions to Advent of Code 2023 are published here.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/aoc_20231211/index.html">
+<a href="./posts/aoc_20231211/index.html" class="no-external">
 <div class="listing-date">
-Mar 3, 2024
+Mar 4, 2024
 </div>
 <div class="listing-author">
 Patrick Coyle
@@ -209,19 +237,19 @@ Patrick Coyle
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="news,code,analysis" data-listing-date-sort="1692594000000" data-listing-file-modified-sort="1692673862154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="news,code,analysis" data-listing-date-sort="1692576000000" data-listing-file-modified-sort="1709512672799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
 <div class="thumbnail">
-<p><a href="./posts/mastodon_api_20230821/index.html"> <img src="./posts/mastodon_api_20230821/mastodon-logo.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/mastodon_api_20230821/index.html" class="no-external"></a></p><a href="./posts/mastodon_api_20230821/index.html" class="no-external">
+<p><img src="./posts/mastodon_api_20230821/mastodon-logo.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/mastodon_api_20230821/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/mastodon_api_20230821/index.html">
 <h3 class="no-anchor listing-title">
-Social Networking with the Mastodon API in R
+<a href="./posts/mastodon_api_20230821/index.html" class="no-external">Social Networking with the Mastodon API in R</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/mastodon_api_20230821/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
 news
@@ -233,14 +261,12 @@ code
 analysis
 </div>
 </div>
-<a href="./posts/mastodon_api_20230821/index.html">
 <div class="listing-description">
-I recently created a Fosstodon account to engage with the #rstats community there. So it seemed only natural to use <code>rtoot</code> (spiritual successor to <code>rtweet</code>) to publish my first…
+<a href="./posts/mastodon_api_20230821/index.html" class="no-external">I recently created a Fosstodon account to engage with the #rstats community there. So it seemed only natural to use <code>rtoot</code> (spiritual successor to <code>rtweet</code>) to publish my first…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/mastodon_api_20230821/index.html">
+<a href="./posts/mastodon_api_20230821/index.html" class="no-external">
 <div class="listing-date">
 Aug 21, 2023
 </div>
@@ -250,19 +276,19 @@ Patrick Coyle
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="news,code,analysis" data-listing-date-sort="1682830800000" data-listing-file-modified-sort="1682902251791" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="2" data-categories="news,code,analysis" data-listing-date-sort="1682812800000" data-listing-file-modified-sort="1709512672799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="269">
 <div class="thumbnail">
-<p><a href="./posts/mermaid_intro_20230430/index.html"> <img src="./posts/mermaid_intro_20230430/mermaid.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/mermaid_intro_20230430/index.html" class="no-external"></a></p><a href="./posts/mermaid_intro_20230430/index.html" class="no-external">
+<p><img src="./posts/mermaid_intro_20230430/mermaid.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/mermaid_intro_20230430/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/mermaid_intro_20230430/index.html">
 <h3 class="no-anchor listing-title">
-Introduction to mermaid.js
+<a href="./posts/mermaid_intro_20230430/index.html" class="no-external">Introduction to mermaid.js</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/mermaid_intro_20230430/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
 news
@@ -274,14 +300,12 @@ code
 analysis
 </div>
 </div>
-<a href="./posts/mermaid_intro_20230430/index.html">
 <div class="listing-description">
-<code>mermaid.js</code> is a Javascript library that allows you to create diagrams by writing “Markdown-ish syntax.” It has native support in Quarto:
+<a href="./posts/mermaid_intro_20230430/index.html" class="no-external"><code>mermaid.js</code> is a Javascript library that allows you to create diagrams by writing “Markdown-ish syntax.” It has native support in Quarto:</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/mermaid_intro_20230430/index.html">
+<a href="./posts/mermaid_intro_20230430/index.html" class="no-external">
 <div class="listing-date">
 Apr 30, 2023
 </div>
@@ -291,19 +315,19 @@ Patrick Coyle
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="news,code,analysis" data-listing-date-sort="1682226000000" data-listing-file-modified-sort="1682884178063" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="3" data-categories="news,code,analysis" data-listing-date-sort="1682208000000" data-listing-file-modified-sort="1709512672803" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="210">
 <div class="thumbnail">
-<p><a href="./posts/nba_api_20230423/index.html"> <img src="./posts/nba_api_20230423/bball.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/nba_api_20230423/index.html" class="no-external"></a></p><a href="./posts/nba_api_20230423/index.html" class="no-external">
+<p><img src="./posts/nba_api_20230423/bball.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/nba_api_20230423/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/nba_api_20230423/index.html">
 <h3 class="no-anchor listing-title">
-Using the NBA API in R
+<a href="./posts/nba_api_20230423/index.html" class="no-external">Using the NBA API in R</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/nba_api_20230423/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
 news
@@ -315,14 +339,12 @@ code
 analysis
 </div>
 </div>
-<a href="./posts/nba_api_20230423/index.html">
 <div class="listing-description">
-nba_api is a Python client for accessing data from www.nba.com. This post presents an example of using <code>nba_api</code> to create a data viz.&nbsp;This example begins by using <code>reticulate:…</code><code></code>
+<a href="./posts/nba_api_20230423/index.html" class="no-external">nba_api is a Python client for accessing data from www.nba.com. This post presents an example of using <code>nba_api</code> to create a data viz.&nbsp;This example begins by using <code>reticulate:…</code><code></code></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/nba_api_20230423/index.html">
+<a href="./posts/nba_api_20230423/index.html" class="no-external">
 <div class="listing-date">
 Apr 23, 2023
 </div>
@@ -465,15 +487,28 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    if (id.startsWith('sec-')) {
+    if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
       if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
         }
         return container.innerHTML
       } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
@@ -482,7 +517,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      return note.innerHTML;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -524,6 +567,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
       }
     }, function(instance) {
     });
@@ -595,6 +661,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
