@@ -1,0 +1,11 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/aoc_20231211/index.html",
+      "/posts/mastodon_api_20230821/index.html",
+      "/posts/mermaid_intro_20230430/index.html",
+      "/posts/nba_api_20230423/index.html"
+    ]
+  }
+]
