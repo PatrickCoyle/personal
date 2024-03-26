@@ -1177,11 +1177,16 @@
       ],
       "Hash": "a84e2cc86d07289b3b6f5069df7a004c"
     },
-    "tidyRSS": {
-      "Package": "tidyRSS",
-      "Version": "2.0.7",
-      "Source": "Repository",
-      "Repository": "CRAN",
+    "tidyRSS2": {
+      "Package": "tidyRSS2",
+      "Version": "3.0.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "PatrickCoyle",
+      "RemoteRepo": "tidyRSS2",
+      "RemoteRef": "master",
+      "RemoteSha": "8cc2d3a781fdaff7ff4c2f4bcc9341a3bf5b5ac3",
       "Requirements": [
         "R",
         "anytime",
@@ -1197,7 +1202,7 @@
         "vctrs",
         "xml2"
       ],
-      "Hash": "bfd32a976e5ac80838ece3256cd7f810"
+      "Hash": "1b6824d5f41f59de2d7b001d66065b10"
     },
     "tidyr": {
       "Package": "tidyr",

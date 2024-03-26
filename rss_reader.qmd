@@ -7,7 +7,7 @@ date: today
 #| echo: false
 #| warning: false
 
-library(tidyRSS)
+library(tidyRSS2)
 library(dplyr)
 library(DT)
 library(purrr)
@@ -23,7 +23,7 @@ myfeeds <- tribble(
 ) %>% 
   mutate(feed = url %>% map(
     ~.x %>% 
-      tidyRSS::tidyfeed() %>% 
+      tidyRSS2::tidyfeed() %>% 
       mutate(item_pub_date = ymd(item_pub_date)) %>% 
       filter(item_pub_date >= today() - 60) 
   )) %>% 
