@@ -2,7 +2,7 @@ name: Render Quarto Project
 
 on:
   push:
-    branches: [ main ]  # Change branch name as needed -- touching on 3/25
+    branches: [ main ]  # Change branch name as needed -- touching on 4/12
 
 jobs:
   render:
