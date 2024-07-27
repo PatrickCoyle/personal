@@ -2,7 +2,7 @@ name: Render Quarto Project
 
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
+    - cron: '*/10 * * * *' # Runs every ten minutes
 
 jobs:
   render:
