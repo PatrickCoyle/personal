@@ -1,8 +1,8 @@
 name: Render Quarto Project
 
 on:
-  push:
-    branches: [ main ]  # Change branch name as needed -- touching on 5/15
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
 
 jobs:
   render:
