@@ -5,3 +5,5 @@
 /.quarto/
 _reference/
 dev/
+docs/
+debug.log
