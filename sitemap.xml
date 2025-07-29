@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://patrickcoyle.github.io/personal/posts/mermaid_intro_20230430/index.html</loc>
-    <lastmod>2024-09-05T03:05:25.640Z</lastmod>
-  </url>
-  <url>
-    <loc>https://patrickcoyle.github.io/personal/posts/nba_api_20230423/index.html</loc>
-    <lastmod>2024-09-05T03:05:25.644Z</lastmod>
-  </url>
-  <url>
-    <loc>https://patrickcoyle.github.io/personal/posts/aoc_20231211/index.html</loc>
-    <lastmod>2024-09-05T03:05:25.640Z</lastmod>
-  </url>
-  <url>
-    <loc>https://patrickcoyle.github.io/personal/blog.html</loc>
-    <lastmod>2024-09-05T03:05:25.636Z</lastmod>
-  </url>
-  <url>
-    <loc>https://patrickcoyle.github.io/personal/index.html</loc>
-    <lastmod>2024-09-05T03:05:25.636Z</lastmod>
+    <loc>https://patrickcoyle.github.io/personal/rss_reader.html</loc>
+    <lastmod>2025-07-29T02:38:22.608Z</lastmod>
   </url>
   <url>
     <loc>https://patrickcoyle.github.io/personal/posts/mastodon_api_20230821/index.html</loc>
-    <lastmod>2024-09-05T03:05:25.640Z</lastmod>
+    <lastmod>2025-07-29T02:38:22.607Z</lastmod>
   </url>
   <url>
-    <loc>https://patrickcoyle.github.io/personal/rss_reader.html</loc>
-    <lastmod>2024-09-05T03:05:25.644Z</lastmod>
+    <loc>https://patrickcoyle.github.io/personal/index.html</loc>
+    <lastmod>2025-07-29T02:38:22.606Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patrickcoyle.github.io/personal/blog.html</loc>
+    <lastmod>2025-07-29T02:38:22.606Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patrickcoyle.github.io/personal/posts/aoc_20231211/index.html</loc>
+    <lastmod>2025-07-29T02:38:22.606Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patrickcoyle.github.io/personal/posts/mermaid_intro_20230430/index.html</loc>
+    <lastmod>2025-07-29T02:38:22.607Z</lastmod>
   </url>
 </urlset>
