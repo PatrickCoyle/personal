@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -69,14 +69,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1d547202ef5b81858b5cd4b4ce92205d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-33486d6390cc5f9ef26896ba28f0e32f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -127,6 +128,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Patrick Coyle</span>
     </a>
@@ -199,11 +202,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- https://unpkg.com/mermaid@0.5.3/dist/www/all.html#mermaid -->
 <p><code>mermaid.js</code> is a Javascript library that allows you to create diagrams by writing “Markdown-ish syntax.” It has <a href="https://quarto.org/docs/authoring/diagrams.html">native support in Quarto</a>:</p>
 <div class="cell" data-layout-align="default">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>graph LR</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>graph LR</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>A[Hard edge] --&gt; B(Round edge)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>B --&gt; C{Decision}</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>C --&gt; D[Result one]</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>C --&gt; E[Result two]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>C --&gt; E[Result two]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>
@@ -221,12 +224,12 @@ C --&gt; E[Result two]
 </div>
 <p>Here is mermaid template for the 2023 NBA Playoffs (excluding the play-in tournament)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr, <span class="at">warn.conflicts =</span> <span class="cn">FALSE</span>) <span class="co"># to load the magrittr pipe</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr, <span class="at">warn.conflicts =</span> <span class="cn">FALSE</span>) <span class="co"># to load the magrittr pipe</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>my_mmd <span class="ot">&lt;-</span> <span class="st">"playoffs_template1.mmd"</span> <span class="sc">%&gt;%</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">readLines</span>(<span class="at">warn =</span> F) </span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>my_mmd <span class="sc">%&gt;%</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  DiagrammeR<span class="sc">::</span><span class="fu">mermaid</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  DiagrammeR<span class="sc">::</span><span class="fu">mermaid</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="DiagrammeR html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-ec0d521e9029f5d964a0" style="width:100%;height:464px;"></div>
 <script type="application/json" data-for="htmlwidget-ec0d521e9029f5d964a0">{"x":{"diagram":"  graph LR\n  E1 --> ES1\n  E8 --> ES1\n  E4 --> ES4\n  E5 --> ES4\n  E2 --> ES2\n  E7 --> ES2\n  E3 --> ES3\n  E6 --> ES3\n  ES1 --> EF1\n  ES4 --> EF1\n  ES2 --> EF2\n  ES3 --> EF2\n  EF1 --> EC\n  EF2 --> EC\n  EC --> C\n  W1 --> WS1\n  W8 --> WS1\n  W4 --> WS4\n  W5 --> WS4\n  W2 --> WS2\n  W7 --> WS2\n  W3 --> WS3\n  W6 --> WS3\n  WS1 --> WF1\n  WS4 --> WF1\n  WS2 --> WF2\n  WS3 --> WF2\n  WF1 --> WC\n  WF2 --> WC\n  WC --> C"},"evals":[],"jsHooks":[]}</script>
@@ -234,7 +237,7 @@ C --&gt; E[Result two]
 </div>
 <p>We can progammatically edit this template with data about the teams and games:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>seed_xwalk <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"nba_2023_seed_xwalk.csv"</span>, <span class="at">na =</span> <span class="st">""</span>)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>helper1_20230423 <span class="ot">&lt;-</span> <span class="cf">function</span> (mmd) {</span>
@@ -256,7 +259,7 @@ C --&gt; E[Result two]
 <span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>my_mmd <span class="sc">%&gt;%</span> </span>
 <span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">helper1_20230423</span>() <span class="sc">%&gt;%</span> </span>
 <span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  DiagrammeR<span class="sc">::</span><span class="fu">mermaid</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  DiagrammeR<span class="sc">::</span><span class="fu">mermaid</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="DiagrammeR html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-daf4a9e215a296eb56fb" style="width:100%;height:464px;"></div>
 <script type="application/json" data-for="htmlwidget-daf4a9e215a296eb56fb">{"x":{"diagram":"  graph LR\n  MIL --> ES1\n  MIA --> ES1\n  CLE --> ES4\n  NYK --> ES4\n  BOS --> ES2\n  ATL --> ES2\n  PHI --> ES3\n  BKN --> ES3\n  ES1 --> EF1\n  ES4 --> EF1\n  ES2 --> EF2\n  ES3 --> EF2\n  EF1 --> EC\n  EF2 --> EC\n  EC --> C\n  DEN --> WS1\n  MIN --> WS1\n  PHX --> WS4\n  LAC --> WS4\n  MEM --> WS2\n  LAL --> WS2\n  SAC --> WS3\n  GSW --> WS3\n  WS1 --> WF1\n  WS4 --> WF1\n  WS2 --> WF2\n  WS3 --> WF2\n  WF1 --> WC\n  WF2 --> WC\n  WC --> C"},"evals":[],"jsHooks":[]}</script>
@@ -323,13 +326,14 @@ C --&gt; E[Result two]
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
