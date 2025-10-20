@@ -16,8 +16,8 @@ website:
     right:
       - text: "Blog"
         href: blog.qmd
-      - text: "RSS Reader"
-        href: rss_reader.qmd
+      # - text: "RSS Reader" ## RSS feeds for Posit blogs appear to be deactivated as of October 2025
+      #   href: rss_reader.qmd
 
 format:
   html:
