@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "posts/mastodon_api_20230821/index.html",
-    "href": "posts/mastodon_api_20230821/index.html",
-    "title": "Social Networking with the Mastodon API in R",
-    "section": "",
-    "text": "I recently created a Fosstodon account to engage with the #rstats community there. So it seemed only natural to use rtoot (spiritual successor to rtweet) to publish my first “toot”:\n\n# https://github.com/schochastics/rtoot\n# devtools::install_github(\"schochastics/rtoot\")\n# rtoot::auth_setup()\nrtoot::post_toot(status = \"my first rtoot #rstats\\n\n                 (published with the rtoot package: https://github.com/schochastics/rtoot)\",\n                 media = \"mastodon-logo.png\", \n                 alt_text = \"Mastodon logo\")\n\nIt worked!\n\n\n\nMy first toot, published with the `rtoot` package.\n\n\nA Mastodon thread could be published using Quarto and custom knitr hooks. Here is an example using rtweet – I will try to translate this to use rtoot instead."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Patrick Coyle",
-    "section": "",
-    "text": "Welcome to my personal webpage and data science blog. I am a statistician with an interest in R programming. I also cook sometimes and keep a photo journal of some of the things I make."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog Posts",
-    "section": "",
-    "text": "Advent of Code 2023\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nOct 13, 2025\n\n\nPatrick Coyle\n\n\n\n\n\n\n\n\n\n\n\n\nSocial Networking with the Mastodon API in R\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nPatrick Coyle\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to mermaid.js\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 30, 2023\n\n\nPatrick Coyle\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/aoc_20231211/index.html",
-    "href": "posts/aoc_20231211/index.html",
-    "title": "Advent of Code 2023",
-    "section": "",
-    "text": "My solutions to Advent of Code 2023 are published here."
-  },
-  {
     "objectID": "posts/mermaid_intro_20230430/index.html",
     "href": "posts/mermaid_intro_20230430/index.html",
     "title": "Introduction to mermaid.js",
@@ -40,5 +12,33 @@
     "title": "Introduction to mermaid.js",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nDiagrammeR::mermaid() does not appear to support every Mermaid diagram syntax, such as flowcharts. But the flowchart syntax can be manually entered into a Quarto mermaid code chunk.↩︎"
+  },
+  {
+    "objectID": "posts/aoc_20231211/index.html",
+    "href": "posts/aoc_20231211/index.html",
+    "title": "Advent of Code 2023",
+    "section": "",
+    "text": "My solutions to Advent of Code 2023 are published here."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog Posts",
+    "section": "",
+    "text": "Advent of Code 2023\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nOct 20, 2025\n\n\nPatrick Coyle\n\n\n\n\n\n\n\n\n\n\n\n\nSocial Networking with the Mastodon API in R\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nPatrick Coyle\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to mermaid.js\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 30, 2023\n\n\nPatrick Coyle\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Patrick Coyle",
+    "section": "",
+    "text": "Welcome to my personal webpage and data science blog. I am a statistician with an interest in R programming. I also cook sometimes and keep a photo journal of some of the things I make."
+  },
+  {
+    "objectID": "posts/mastodon_api_20230821/index.html",
+    "href": "posts/mastodon_api_20230821/index.html",
+    "title": "Social Networking with the Mastodon API in R",
+    "section": "",
+    "text": "I recently created a Fosstodon account to engage with the #rstats community there. So it seemed only natural to use rtoot (spiritual successor to rtweet) to publish my first “toot”:\n\n# https://github.com/schochastics/rtoot\n# devtools::install_github(\"schochastics/rtoot\")\n# rtoot::auth_setup()\nrtoot::post_toot(status = \"my first rtoot #rstats\\n\n                 (published with the rtoot package: https://github.com/schochastics/rtoot)\",\n                 media = \"mastodon-logo.png\", \n                 alt_text = \"Mastodon logo\")\n\nIt worked!\n\n\n\nMy first toot, published with the `rtoot` package.\n\n\nA Mastodon thread could be published using Quarto and custom knitr hooks. Here is an example using rtweet – I will try to translate this to use rtoot instead."
   }
 ]
